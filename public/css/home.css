@@ -1,0 +1,105 @@
+main{
+    position: relative;
+    bottom: 4px;
+}
+main section{
+    background-color: #ebebeb;
+    width: auto;
+    margin: auto;
+    padding: 10px;
+}
+.main--intro{
+    color: #666;
+    margin: auto;
+    width: 90%;
+}
+.imagen {
+    width: 100%;
+}
+.banner{
+    width: 100%;
+}
+main section article{
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.box-article{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    transition: all .5s ease-out;
+}
+.truck{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 90%;
+    bottom: 30px;
+}
+main section article:hover .truck{
+    transform: rotate(360deg);
+    transition: all 0.5s ease-out;
+}
+.price {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+    color:  #39b54a;
+    margin-left: 10px;
+}
+.descripcion{
+    visibility: hidden;
+    transition: all 0.5s ease-out;
+}
+main section article:hover {
+    box-shadow: 0px 0px 10px rgb( 100 , 100 , 100 );
+    transition: all 0.5s ease-out;
+}
+
+    
+main section article:hover .descripcion {
+    visibility: visible;
+    display: block;
+    transition: all 0.5s ease-out;
+}
+
+
+@media (min-width: 361px){  
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    main section article {
+        width: 45%;
+    }
+    .descripcion{
+        font-size: 16px;
+        margin-left: 10px;
+        width: 100%;
+        color: #666;
+        display: none;
+    }
+}
+/*desktop*/
+@media (min-width: 769px){
+    main section article {
+        width: 23%;     
+    }
+}
